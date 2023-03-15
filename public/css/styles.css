@@ -436,7 +436,7 @@ form {
 	margin: auto;
 	text-align: left;
 	padding: 20px;
-	background-color: #f2f2f2;
+	background-color: #ffffff;
 	border-radius: 10px;
 }
 label {
@@ -1177,3 +1177,10 @@ input[type="submit"] {
 	border-radius: 15px;
 	border: 5px solid var(--primary-color);
 }
+
+
+
+.totalCart{
+	height: 300px;
+text-align: center;
+  }
