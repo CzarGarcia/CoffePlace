@@ -1,6 +1,7 @@
-<link rel="stylesheet" href="{{asset('css/login.css')}}">
+<link rel="stylesheet" href="{{asset('css/login.css')}}" >
 <main>
 
+   
     <div class="contenedor__todo">
         <div class="caja__trasera">
             <div class="caja__trasera-login">
@@ -20,7 +21,7 @@
             <!--Login-->
             <form action="" class="formulario__login">
                 <h2>Iniciar Sesión</h2>
-                <input type="text" placeholder="Correo Electronico">
+               <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
                 <input type="password" placeholder="Contraseña">
                 <button>Entrar</button>
                    <a href="{{ asset('/auth/google') }}"> <button>Entrar con google</a> </button>
@@ -42,6 +43,7 @@
 <br>
 <br>
 <br>
+</form>
 </main>
 
 

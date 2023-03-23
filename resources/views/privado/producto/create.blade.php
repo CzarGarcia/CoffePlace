@@ -54,7 +54,6 @@
                     <div class="felx items-center justify-center pt-2">
                       <label class="flex flex-col border-4 border-dashed w-full h-10 hover:bg-gray-100 hover:border-purplr-300 group">
                         <div class='flex flex-col items-center justify-center pt-7'>
-                          <svg class="w-5 h-5 text-purple-400 group-hover:text-purple-600" fill:"none" stroke:"currentColor" viewBox="0 0 20 20"></svg>
                           <p class='text-sm text-gray-400 group-hover:text-purple-600 pt-1 tracking-wider'> Selecciona imagen</p>
                         </div> 
                         <input id="imagen" name="imagen" type='file' class="hidden">

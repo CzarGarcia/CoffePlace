@@ -77,7 +77,7 @@
       <div class="felx items-center justify-center pt-7">
         <label class="flex flex-col border-4 border-dashed w-full h-32 hover:bg-gray-100 hover:border-purplr-300 group">
           <div class='flex flex-col items-center justify-center pt-7'>
-            <svg class="w-10 h-10 text-purple-400 group-hover:text-purple-600" fill:"none" stroke:"currentColor" viewBox="0 0 24 24"></svg>
+            <svg class="w-10 h-10 text-purple-400 group-hover:text-purple-600" fill:"none" stroke:"currentColor" viewBox="0 0 16 16"></svg>
             <p class='text-sm text-gray-400 group-hover:text-purple-600 pt-1 tracking-wider'> Selecciona imagen</p>
           </div> 
           <input id="imagen" name="imagen" type='file' class="hidden" />

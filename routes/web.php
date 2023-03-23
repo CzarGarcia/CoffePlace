@@ -26,7 +26,7 @@ Route::view('/contacto', 'contacto/index')->name('contacto');
 Route::view('/sucursales', 'sucursales/index')->name('sucursales');
 Route::view('/p', 'pruebas/index')->name('prueba');
 //Dashboard
-Route::resource('/productos', ProductoController::class);
+
 Route::resource('/catalogo', MostrarController::class);
 
 
@@ -42,7 +42,7 @@ Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear'
 
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('privado.dashboard.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
@@ -50,6 +50,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::resource('/productos', ProductoController::class);
 });
 
 require __DIR__.'/auth.php';
